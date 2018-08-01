@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PlumbJs DEMO</title>
+        <style>
+            #outer_wrapper{
+                margin: auto;
+                width: 800px;
+            }
+            #wrapper {
+                position: absolute;
+                width: 800px;
+                height: 500px;
+                background-color: lightgray;
+
+            }
+            .item{
+                position: absolute;
+                padding: 0px;
+                border: 1px solid black;
+                cursor: pointer;
+                cursor: hand;
+            }
+            .item_header, .colomn{
+                background-color: blueviolet;
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+        <script src="js/jsplumb.js"></script>
+        <script src="js/custom-js.js"></script>
+    </head>
+    <body>
+        <div id="outer_wrapper">
+            <div id="wrapper">
+                <div id="item_1"  class="item">
+                    <div class="item_header">TABLE_NAME</div>
+                    <div class="colomn" id="item_1_1">column_name_01</div>
+                    <div class="colomn">column_name_02</div>
+                    <div class="colomn">column_name_03</div>
+                </div>
+
+                <div id="item_2"  class="item">
+                    <div class="item_header">TABLE_NAME</div>
+                    <div class="colomn">column_name_01</div>
+                    <div class="colomn" id="item_2_2">column_name_02</div>
+                    <div class="colomn">column_name_03</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
